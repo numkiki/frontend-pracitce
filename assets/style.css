@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main CSS */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+#header {
+    height: 65px;
+    background-color: #fffef7;
+}
+
+#top-nav li {
+    display: inline-block;
+
+}
+
+#top-nav li a {
+    color: #2c3b4b;
+    text-decoration: none;
+    line-height: 65px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    font-weight: 500;
+    display: inline-block
+}
+
+/* Center the top-nav */
+#top-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-nav li:hover a {
+    color: #8e9092;
+    /* background-color: ; */
+}
+
+#top-nav .sub-top-nav {
+    display: none;
+}
+
