@@ -4,47 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/icons/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&display=swap" rel="stylesheet"> 
     <title>Home Page</title>
 </head>
 <body>
     <div id="main">
-        <!-- Begin navigator -->
+        <!-- Begin header -->
         <div id="header">
+            <!-- Begin navigator -->
             <ul id="top-nav">
                 <li><a class="logo" href="index.html">Logo</a></li>
-                <li><a href="#">Recipes</a></li>
+                <li>
+                    <a href="#">Recipes
+                    </a>
+                    <ul class="sub-top-nav">
+                        <li><a href="#" class="sub-category">Breakfast</a></li>
+                        <li><a href="#" class="sub-category">Lunch</a></li>
+                        <li><a href="#" class="sub-category">Dinner</a></li>
+                        <li><a href="#" class="sub-category">Dessert</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Features</a></li>
                 <li>
                     <a href="#">Events
                         <i class=></i>
                     </a>
                     <ul class="sub-top-nav">
-                        <li><a href="#" class="sub-event">Past Events</a></li>
-                        <li><a href="#" class="sub-event">Current Events</a></li>
-                        <li><a href="#" class="sub-event">Future Events</a></li>
+                        <li><a href="#" class="sub-category">Past events</a></li>
+                        <li><a href="#" class="sub-category">Live events</a></li>
+                        <li><a href="#" class="sub-category">Future events</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <!-- End navigator -->
 
-            <div id="header-cart">
-
+            <!-- Begin Cart -->
+            <div id="header-cart-btn">
+                <i class="cart-icon ti-shopping-cart"></i>
             </div>
+            <!-- End Cart -->
 
+            <!-- Begin Search -->
             <div id="header-search">
 
             </div>
+            <!-- End Search -->          
         </div>       
-        <!-- End navigator -->
+        <!-- End header -->
 
         <!-- Begin slider -->
         <div id="slider">
 
         </div>
-
         <!-- End slider -->
 
         <!-- Begin philo -->
