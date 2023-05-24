@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root { 
+    --hover-background-color: #ECE8DB;
+    --hover-text-color: #687030;
+    --primary-color: #2c3b4b;
+}
+
 /* Main CSS */
 
 body {
@@ -16,7 +22,10 @@ body {
     height: 60px;
     background-color: #fffef7;
     border-bottom: 2px solid #e2dfd0;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #top-nav {
@@ -35,7 +44,7 @@ body {
 }
 
 #top-nav > li > a {
-    color: #2c3b4b;
+    color: var(--primary-color);
 }
 
 #top-nav li a {
@@ -49,9 +58,9 @@ body {
 }
 
 #top-nav > li:hover > a,
-#top-nav .sub-top-nav li:hover {
-    color: #687030;
-    background-color: #ECE8DB;
+.sub-top-nav li:hover a {
+    color: var(--hover-text-color);
+    background-color: var(--hover-background-color);
 }
 
 #top-nav > li:hover .sub-top-nav {
@@ -81,18 +90,25 @@ body {
 
 #header #header-cart-btn {
     float: right;
+    padding: 0 20px;
+    margin: 0 200px 0 0;
+}
+
+#header #header-cart-btn:hover {
+    background-color: var(--hover-background-color);
+    color: var(--hover-text-color);
+    cursor: pointer;
 }
 
 #header .cart-icon {
     font-size: 20px;
     line-height: 60px;
-    padding: 0 20px;
-    margin: 0 200px 0 0;
 }
 
 /* Slider */
 #slider {
     /* background-color: grey; */
     height: 1000px;
+    margin-top: 60px;
 }
 
